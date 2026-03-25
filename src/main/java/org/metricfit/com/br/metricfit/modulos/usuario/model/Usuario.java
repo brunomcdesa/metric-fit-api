@@ -75,4 +75,8 @@ public class Usuario implements UserDetails {
     public boolean isEnabled() {
         return UserDetails.super.isEnabled();
     }
+
+    public void alterarSenha(String senha) {
+        this.senha = senha;
+    }
 }
